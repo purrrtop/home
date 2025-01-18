@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PURRTOP</title>
+    <style>
+        body {
+            font-family: "Comic Sans MS", "Comic Sans", cursive;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+        }
+        header {
+            background: black;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid gray;
+        }
+        header img {
+            height: 80px;
+        }
+        header nav {
+            display: flex;
+            gap: 10px;
+        }
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        header input {
+            font-size: 12px;
+            padding: 2px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+        }
+        .sidebar {
+            flex: 1 0 150px;
+            background: #1e1e1e;
+            padding: 10px;
+        }
+        .sidebar h3 {
+            font-size: 14px;
+        }
+        .sidebar ul {
+            padding: 0;
+            list-style: none;
+        }
+        .sidebar ul li {
+            margin-bottom: 5px;
+        }
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+        }
+        .sidebar .card {
+            background: #252525;
+            border: 1px solid #333;
+            padding: 5px;
+            text-align: center;
+            font-size: 10px;
+            border-radius: 3px;
+            width: 120px;
+            margin-bottom: 10px;
+        }
+        .sidebar .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 3px;
+        }
+        .sidebar .card h4 {
+            margin-top: 3px;
+            color: white;
+            font-size: 10px;
+        }
+        .main-content {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-content .featured {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .main-content .featured img {
+            max-width: 100px;
+            height: auto;
+            border-radius: 3px;
+        }
+        .main-content .featured h3 {
+            font-size: 14px;
+        }
+        .main-content .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
+        }
+        .main-content .card {
+            font-size: 10px;
+            background: #252525;
+            padding: 5px;
+            text-align: center;
+            border: 1px solid #333;
+            border-radius: 3px;
+        }
+        .main-content .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 3px;
+        }
+        footer {
+            background: black;
+            color: gray;
+            text-align: center;
+            padding: 5px;
+            margin-top: 10px;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://i.imgur.com/sh08GZX.png" alt="PURRTOP">
+        <nav>
+            <a href="#videos">Videos</a>
+            <a href="#blog">Blog</a>
+            <a href="#music">Music</a>
+            <a href="#games">Games</a>
+        </nav>
+        <input type="text" placeholder="Search...">
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Categories</h3>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=K0vnApGVl5U">Film</a></li>
+                <li><a href="https://www.youtube.com/watch?v=K0vnApGVl5U">Comedy</a></li>
+                <li><a href="https://www.youtube.com/watch?v=K0vnApGVl5U">ZCEP</a></li>
+            </ul>
+
+            <!-- YouTube Video Cards -->
+            <a href="https://www.youtube.com/watch?v=SmlEkR7ImP0">
+                <div class="card">
+                    <img src="https://img.youtube.com/vi/SmlEkR7ImP0/maxresdefault.jpg" alt="boris dies">
+                    <h4>Boris dies</h4>
+                
+            </a>
+        </aside>
+
+        <div class="main-content">
+            <div class="featured">
+                <img src="" alt="Featured Thumbnail">
+                <div>
+                    <h3>empty</h3>
+                    <p>none</p>
+                </div>
+            </div>
+
+            <div class="grid">
+                <div class="card">
+                    <img src="" alt="Thumbnail 1">
+                    empty <br> August 2022 | 5,124 Views
+                </div>
+                <div class="card">
+                    <img src="" alt="Thumbnail 2">
+                    empty <br> November 2022 | 1,889 Views
+                </div>
+                <div class="card">
+                    <img src="" alt="Thumbnail 3">
+                    empty <br> October 2023 | 1,698 Views
+                </div>
+                <div class="card">
+                    <img src="" alt="Thumbnail 4">
+                    empty <br> July 2022 | 1,439 Views
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Bandwidth ain't free! <a href="#">Consider donating</a>.
+    </footer>
+</body>
+</html>
